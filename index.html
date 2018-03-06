@@ -40,22 +40,22 @@
   </body>
 
     <script>
-    const input = document.querySelector('input')
+const input = document.querySelector('input')
 
 input.addEventListener('keydown', function(e) {
-  if (e.which === 71) {
-    console.log("No 'Gs'")
-    return e.preventDefault()
-  }
+if (e.which === 71) {
+console.log("No 'Gs'")
+return e.preventDefault()
+}
 })
 const divs = document.querySelectorAll('div')
 
 function bubble(e) {
-  e.stopPropagation()
-  console.log(this.firstChild.nodeValue.trim() + ' bubbled')
+e.stopPropagation()
+console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 for (let i = 0; i < divs.length; i++) {
-  divs[i].addEventListener('click', bubble)
+divs[i].addEventListener('click', bubble)
 }
 </script>
 </html>
