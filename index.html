@@ -10,9 +10,9 @@
 //   }
 // })
 const divs = document.querySelectorAll('div')
+  console.log("divs")
 
 function bubble(e) {
-  console.log("divs")
   e.stopPropagation()
   console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
